@@ -11,7 +11,7 @@ function UserBasicInfo({ user, cardComponentTheme }) {
       <img
         className="userProfileImage"
         src={user.avatar_url}
-        alt="user profile picture"
+        alt="user profile"
       />
       <div className="userDetails">
         <div>
