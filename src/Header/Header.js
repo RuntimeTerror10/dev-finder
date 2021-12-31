@@ -14,7 +14,7 @@ function Header({ onThemeChange }) {
 
   useEffect(() => {
     onThemeChange(isDarkMode);
-  }, [isDarkMode]);
+  });
 
   return (
     <StyledHeader appTheme={isDarkMode}>
