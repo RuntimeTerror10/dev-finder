@@ -18,11 +18,11 @@ function App() {
   };
 
   return (
-    <StyledContainer appTheme={isDarkMode}>
+    <StyledContainer isDarkTheme={isDarkMode}>
       <div className="App">
         <Header onThemeChange={handleThemeChange} />
-        <UserSearch onUserSearch={getUserInfo} appTheme={isDarkMode} />
-        <UserCard userInfo={userInfo} appTheme={isDarkMode} />
+        <UserSearch onUserSearch={getUserInfo} isDarkTheme={isDarkMode} />
+        <UserCard userInfo={userInfo} isDarkTheme={isDarkMode} />
       </div>
     </StyledContainer>
   );

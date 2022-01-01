@@ -1,13 +1,13 @@
 import { StyledUserBasicInfo } from "./UserBasicInfo.style";
 
-function UserBasicInfo({ user, cardComponentTheme }) {
+function UserBasicInfo({ user, isDarkTheme }) {
   const joinDateInfo = new Date(user.created_at);
   const joinDate = joinDateInfo.getDate();
   const joinMonth = joinDateInfo.toLocaleString("default", { month: "short" });
   const joinYear = joinDateInfo.getFullYear();
 
   return (
-    <StyledUserBasicInfo componentTheme={cardComponentTheme}>
+    <StyledUserBasicInfo isDarkTheme={isDarkTheme}>
       <img
         className="userProfileImage"
         src={user.avatar_url}

@@ -1,25 +1,25 @@
 import { StyledGithubProfileInfo } from "./GithubProfileInfo.style";
 import GithubStats from "./GithubStats";
 
-function GithubProfileInfo({ user, cardComponentTheme }) {
+function GithubProfileInfo({ user, isDarkTheme }) {
   return (
-    <StyledGithubProfileInfo componentTheme={cardComponentTheme}>
+    <StyledGithubProfileInfo isDarkTheme={isDarkTheme}>
       <p className="userBio">{user.bio}</p>
       <div className="statsContainer">
         <GithubStats
           statName="Repos"
           statValue={user.public_repos}
-          componentTheme={cardComponentTheme}
+          isDarkTheme={isDarkTheme}
         />
         <GithubStats
           statName="Followers"
           statValue={user.followers}
-          componentTheme={cardComponentTheme}
+          isDarkTheme={isDarkTheme}
         />
         <GithubStats
           statName="Following"
           statValue={user.following}
-          componentTheme={cardComponentTheme}
+          isDarkTheme={isDarkTheme}
         />
       </div>
     </StyledGithubProfileInfo>

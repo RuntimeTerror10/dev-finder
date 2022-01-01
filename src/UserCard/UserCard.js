@@ -3,21 +3,21 @@ import GithubProfileInfo from "./GithubStats/GithubProfileInfo";
 import CardFooter from "./CardFooter/CardFooter";
 import { StyledUserCard } from "./UserCard.style";
 
-function userCard({ userInfo, appTheme }) {
+function userCard({ userInfo, isDarkTheme }) {
   return (
     <>
       {userInfo == null ? (
         <div></div>
       ) : "id" in userInfo ? (
-        <StyledUserCard cardTheme={appTheme}>
+        <StyledUserCard isDarkTheme={isDarkTheme}>
           <div className="userCard">
-            <UserBasicInfo user={userInfo} cardComponentTheme={appTheme} />
-            <GithubProfileInfo user={userInfo} cardComponentTheme={appTheme} />
-            <CardFooter user={userInfo} cardComponentTheme={appTheme} />
+            <UserBasicInfo user={userInfo} isDarkTheme={isDarkTheme} />
+            <GithubProfileInfo user={userInfo} isDarkTheme={isDarkTheme} />
+            <CardFooter user={userInfo} isDarkTheme={isDarkTheme} />
           </div>
         </StyledUserCard>
       ) : (
-        <StyledUserCard cardTheme={appTheme}>
+        <StyledUserCard isDarkTheme={isDarkTheme}>
           <div className="notFoundMsg">No User found :(</div>
         </StyledUserCard>
       )}

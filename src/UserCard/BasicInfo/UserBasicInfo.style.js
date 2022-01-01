@@ -27,7 +27,7 @@ export const StyledUserBasicInfo = styled.div`
   }
   .userName,
   .joinedDate {
-    color: ${({ componentTheme }) => (componentTheme ? "#fff" : "#121d2e")};
+    color: ${({ isDarkTheme }) => (isDarkTheme ? "#fff" : "#121d2e")};
   }
 
   .userLogin,

@@ -5,9 +5,9 @@ import { mdiTwitter } from "@mdi/js";
 import { mdiOfficeBuilding } from "@mdi/js";
 import { StyledFooter } from "./CardFooter.style";
 
-function CardFooter({ user, cardComponentTheme }) {
+function CardFooter({ user, isDarkTheme }) {
   return (
-    <StyledFooter componentTheme={cardComponentTheme}>
+    <StyledFooter isDarkTheme={isDarkTheme}>
       <div className="cardFooterLeft">
         <div className="footerElement">
           <Icon className="cardIcon" path={mdiLinkVariant} size={1.3} />

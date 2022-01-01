@@ -6,7 +6,7 @@ export const StyledGithubProfileInfo = styled.div`
   width: 100%;
 
   .userBio {
-    color: ${({ componentTheme }) => (componentTheme ? "#fff" : "#121d2e")};
+    color: ${({ isDarkTheme }) => (isDarkTheme ? "#fff" : "#121d2e")};
     font-size: 1.2rem;
     padding: 0;
     margin: 0;
@@ -17,8 +17,7 @@ export const StyledGithubProfileInfo = styled.div`
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background: ${({ componentTheme }) =>
-      componentTheme ? "#121d2e" : "#ddedf0"};
+    background: ${({ isDarkTheme }) => (isDarkTheme ? "#121d2e" : "#ddedf0")};
     border-radius: 10px;
     margin: 25px 0;
     transition: all 0.25s ease-in-out;

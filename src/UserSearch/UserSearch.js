@@ -2,7 +2,7 @@ import { useState } from "react";
 import { StyledSearch } from "./UserSearch.style";
 import getUserInfo from "../getUserInfo";
 
-function UserSearch({ onUserSearch, appTheme }) {
+function UserSearch({ onUserSearch, isDarkTheme }) {
   const [userSearch, setUserSearch] = useState("");
 
   const handleUserInput = (e) => {
@@ -17,7 +17,7 @@ function UserSearch({ onUserSearch, appTheme }) {
   };
 
   return (
-    <StyledSearch onSubmit={handleSubmit} formTheme={appTheme}>
+    <StyledSearch onSubmit={handleSubmit} isDarkTheme={isDarkTheme}>
       <input
         className="userInput"
         type="search"

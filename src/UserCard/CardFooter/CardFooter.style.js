@@ -10,13 +10,13 @@ export const StyledFooter = styled.div`
   }
   .footerElement span,
   .userLink {
-    color: ${({ componentTheme }) => (componentTheme ? "#fff" : "#121d2e")};
+    color: ${({ isDarkTheme }) => (isDarkTheme ? "#fff" : "#121d2e")};
     font-size: 1.2rem;
     font-family: "Roboto", sans-serif;
     transition: all 0.25s ease-in-out;
   }
   .cardIcon {
-    color: ${({ componentTheme }) => (componentTheme ? "#fff" : "#121d2e")};
+    color: ${({ isDarkTheme }) => (isDarkTheme ? "#fff" : "#121d2e")};
     transition: all 0.25s ease-in-out;
   }
   .userLink,
