@@ -5,7 +5,7 @@ export const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 0;
   font-family: "Roboto", sans-serif;
 
   .themeIcon {
@@ -13,7 +13,7 @@ export const StyledHeader = styled.header`
   }
 
   .header {
-    font-size: 2.7rem;
+    font-size: 2.3rem;
     color: ${({ appTheme }) => (appTheme ? "#fff" : "#121d2e")};
     transition: all 0.25s ease-in-out;
   }

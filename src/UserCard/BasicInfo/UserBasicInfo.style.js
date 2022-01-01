@@ -5,8 +5,8 @@ export const StyledUserBasicInfo = styled.div`
   font-family: "Roboto", sans-serif;
 
   .userProfileImage {
-    width: 250px;
-    height: 250px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
   }
 
@@ -32,11 +32,11 @@ export const StyledUserBasicInfo = styled.div`
 
   .userLogin,
   .joinedDate {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .userName {
-    font-size: 2.8rem;
+    font-size: 2rem;
   }
 
   .userLogin {

@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const StyledSearch = styled.form`
-  width: 100%;
   display: flex;
-  padding: 1.3rem 1rem;
+  padding: 1rem;
   justify-content: space-between;
   background: ${({ formTheme }) => (formTheme ? "#1E2748" : "#fff")};
   border-radius: 10px;
@@ -16,19 +15,19 @@ export const StyledSearch = styled.form`
     border: none;
     margin-right: 10px;
     flex: 1;
-    padding: 1rem 0rem;
-    font-size: 1.4rem;
+    padding: 0.5rem 0;
+    font-size: 1.15rem;
     color: ${({ formTheme }) => (formTheme ? "#fff" : "#121d2e")};
     outline: none;
     transition: all 0.25s ease-in-out;
   }
   .searchBtn {
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 1rem;
     background: rgb(14, 104, 255);
     border: none;
     border-radius: 5px;
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 1.15rem;
     cursor: pointer;
     transition: all 0.25s ease;
 

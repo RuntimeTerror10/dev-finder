@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const StyledUserCard = styled.div`
-  width: 100%;
-  padding: 1.3rem 1rem;
+  padding: 0.3rem 0.5rem;
   background: ${({ cardTheme }) => (cardTheme ? "#1E2748" : "#fff")};
   border-radius: 10px;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);

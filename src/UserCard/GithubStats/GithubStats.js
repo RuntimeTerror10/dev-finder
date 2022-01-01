@@ -3,7 +3,7 @@ import styled from "styled-components";
 const StyledWrapper = styled.div`
   .statHeading,
   .statFigure {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: ${({ statTheme }) => (statTheme ? "#fff" : "#121d2e")};
     text-align: center;
     font-weight: bold;
