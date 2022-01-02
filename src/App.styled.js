@@ -18,4 +18,9 @@ export const StyledContainer = styled.div`
     margin: 0 auto;
     transition: all 0.25s ease;
   }
+  @media (max-width: 480px) {
+    .App {
+      min-width: 95%;
+    }
+  }
 `;

@@ -25,4 +25,10 @@ export const StyledFooter = styled.div`
     bottom: 5px;
     left: 5px;
   }
+  @media (max-width: 600px) {
+    .footerElement span,
+    .userLink {
+      font-size: 1rem;
+    }
+  }
 `;

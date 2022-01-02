@@ -35,4 +35,10 @@ export const StyledSearch = styled.form`
       background: rgb(14, 80, 255);
     }
   }
+  @media (max-width: 600px) {
+    .userInput,
+    .searchBtn {
+      font-size: 1rem;
+    }
+  }
 `;

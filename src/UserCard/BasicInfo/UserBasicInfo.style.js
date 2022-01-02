@@ -46,4 +46,25 @@ export const StyledUserBasicInfo = styled.div`
   .joinedDate {
     margin-top: 1rem;
   }
+
+  @media (max-width: 600px) {
+    .userName {
+      font-size: 1.4rem;
+    }
+    .userLogin,
+    .joinedDate {
+      font-size: 1rem;
+    }
+    .userProfileImage {
+      width: 140px;
+      height: 140px;
+    }
+  }
+
+  @media (max-width: 370px) {
+    .userProfileImage {
+      width: 120px;
+      height: 120px;
+    }
+  }
 `;

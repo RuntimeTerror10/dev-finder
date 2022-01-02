@@ -23,4 +23,9 @@ export const StyledHeader = styled.header`
     border: none;
     transition: all 0.25s ease;
   }
+  @media (max-width: 600px) {
+    .header {
+      font-size: 2rem;
+    }
+  }
 `;

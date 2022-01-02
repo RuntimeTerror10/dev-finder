@@ -10,7 +10,7 @@ function CardFooter({ user, isDarkTheme }) {
     <StyledFooter isDarkTheme={isDarkTheme}>
       <div className="cardFooterLeft">
         <div className="footerElement">
-          <Icon className="cardIcon" path={mdiLinkVariant} size={1.3} />
+          <Icon className="cardIcon" path={mdiLinkVariant} size={1.2} />
           {!user.blog ? (
             <span>Unavailable</span>
           ) : (
@@ -20,13 +20,13 @@ function CardFooter({ user, isDarkTheme }) {
           )}
         </div>
         <div className="footerElement">
-          <Icon className="cardIcon" path={mdiMapMarker} size={1.3} />
+          <Icon className="cardIcon" path={mdiMapMarker} size={1.2} />
           <span>{!user.location ? "unavailable" : user.location}</span>
         </div>
       </div>
       <div className="cardFooterRight">
         <div className="footerElement">
-          <Icon className="cardIcon" path={mdiTwitter} size={1.3} />
+          <Icon className="cardIcon" path={mdiTwitter} size={1.2} />
           <a
             href={`https://twitter.com/${user.twitter_username}`}
             target="__blank"
@@ -36,7 +36,7 @@ function CardFooter({ user, isDarkTheme }) {
           </a>
         </div>
         <div className="footerElement">
-          <Icon className="cardIcon" path={mdiOfficeBuilding} size={1.3} />
+          <Icon className="cardIcon" path={mdiOfficeBuilding} size={1.2} />
           <span>{!user.company ? "Unavailable" : user.company}</span>
         </div>
       </div>

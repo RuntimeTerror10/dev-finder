@@ -9,6 +9,12 @@ const StyledWrapper = styled.div`
     font-weight: bold;
     transition: all 0.25s ease-in-out;
   }
+  @media (max-width: 600px) {
+    .statHeading,
+    .statFigure {
+      font-size: 1rem;
+    }
+  }
 `;
 
 function GithubStats({ statValue, statName, isDarkTheme }) {
