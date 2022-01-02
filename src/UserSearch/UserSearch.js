@@ -21,7 +21,7 @@ function UserSearch({ onUserSearch, isDarkTheme }) {
       <input
         className="userInput"
         type="search"
-        placeholder="Search for a user..."
+        placeholder="Enter Github username here..."
         onChange={handleUserInput}
       />
       <button className="searchBtn">Search</button>
