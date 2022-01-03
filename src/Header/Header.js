@@ -28,7 +28,7 @@ function Header({ onThemeChange }) {
               title="Change Theme"
               size={1.5}
               cursor="pointer"
-              color="#fff"
+              color="#F8F0E3"
             />
           ) : (
             <Icon

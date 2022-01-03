@@ -14,7 +14,7 @@ export const StyledHeader = styled.header`
 
   .header {
     font-size: 2.3rem;
-    color: ${({ appTheme }) => (appTheme ? "#fff" : "#121d2e")};
+    color: ${({ appTheme }) => (appTheme ? "#F8F0E3" : "#121d2e")};
     transition: all 0.25s ease-in-out;
   }
 

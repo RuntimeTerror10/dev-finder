@@ -7,14 +7,12 @@ function userCard({ userInfo, isDarkTheme }) {
   return (
     <>
       {userInfo == null ? (
-        <div></div>
+        ""
       ) : "id" in userInfo ? (
         <StyledUserCard isDarkTheme={isDarkTheme}>
-          <div className="userCard">
-            <UserBasicInfo user={userInfo} isDarkTheme={isDarkTheme} />
-            <GithubProfileInfo user={userInfo} isDarkTheme={isDarkTheme} />
-            <CardFooter user={userInfo} isDarkTheme={isDarkTheme} />
-          </div>
+          <UserBasicInfo user={userInfo} isDarkTheme={isDarkTheme} />
+          <GithubProfileInfo user={userInfo} isDarkTheme={isDarkTheme} />
+          <CardFooter user={userInfo} isDarkTheme={isDarkTheme} />
         </StyledUserCard>
       ) : (
         <StyledUserCard isDarkTheme={isDarkTheme}>

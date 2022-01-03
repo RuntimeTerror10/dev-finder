@@ -17,8 +17,7 @@ export const StyledSearch = styled.form`
     flex: 1;
     padding: 0.5rem 0;
     font-size: 1.15rem;
-    color: ${({ isDarkTheme }) => (isDarkTheme ? "#fff" : "#121d2e")};
-    outline: none;
+    color: ${({ isDarkTheme }) => (isDarkTheme ? "#F8F0E3" : "#121d2e")};
     transition: all 0.25s ease-in-out;
   }
   .searchBtn {

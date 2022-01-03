@@ -22,14 +22,11 @@ export const StyledUserBasicInfo = styled.div`
     display: flex;
     justify-content: space-around;
     align-self: center;
+    align-items: center;
     flex: 1;
     flex-wrap: wrap;
+    gap: 1rem;
   }
-  .userName,
-  .joinedDate {
-    color: ${({ isDarkTheme }) => (isDarkTheme ? "#fff" : "#121d2e")};
-  }
-
   .userLogin,
   .joinedDate {
     font-size: 1.2rem;
@@ -41,10 +38,7 @@ export const StyledUserBasicInfo = styled.div`
 
   .userLogin {
     text-decoration: none;
-    color: rgb(14, 104, 255);
-  }
-  .joinedDate {
-    margin-top: 1rem;
+    color: rgb(14, 144, 255);
   }
 
   @media (max-width: 600px) {

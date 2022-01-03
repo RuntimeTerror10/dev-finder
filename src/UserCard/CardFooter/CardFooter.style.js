@@ -10,13 +10,11 @@ export const StyledFooter = styled.div`
   }
   .footerElement span,
   .userLink {
-    color: ${({ isDarkTheme }) => (isDarkTheme ? "#fff" : "#121d2e")};
     font-size: 1.2rem;
     font-family: "Roboto", sans-serif;
     transition: all 0.25s ease-in-out;
   }
   .cardIcon {
-    color: ${({ isDarkTheme }) => (isDarkTheme ? "#fff" : "#121d2e")};
     transition: all 0.25s ease-in-out;
   }
   .userLink,
@@ -24,6 +22,9 @@ export const StyledFooter = styled.div`
     position: relative;
     bottom: 5px;
     left: 5px;
+  }
+  .userLink {
+    color: rgb(14, 144, 255);
   }
   @media (max-width: 600px) {
     .footerElement span,

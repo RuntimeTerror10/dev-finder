@@ -6,7 +6,6 @@ export const StyledGithubProfileInfo = styled.div`
   width: 100%;
 
   .userBio {
-    color: ${({ isDarkTheme }) => (isDarkTheme ? "#fff" : "#121d2e")};
     font-size: 1.2rem;
     padding: 0;
     margin: 0;
