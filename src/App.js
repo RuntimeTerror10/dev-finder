@@ -9,11 +9,12 @@ import UserCard from "./UserCard/UserCard";
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
   const [userInfo, setUserInfo] = useState(null);
+
   const handleThemeChange = (isThemeDark) => {
     setIsDarkMode(isThemeDark);
   };
 
-  const getUserInfo = (userInfo) => {
+  const handleSetUserInfo = (userInfo) => {
     setUserInfo(userInfo);
   };
 
@@ -24,7 +25,7 @@ function App() {
       </Helmet>
       <div className="App">
         <Header onThemeChange={handleThemeChange} />
-        <UserSearch onUserSearch={getUserInfo} isDarkTheme={isDarkMode} />
+        <UserSearch onUserSearch={handleSetUserInfo} isDarkTheme={isDarkMode} />
         <UserCard userInfo={userInfo} isDarkTheme={isDarkMode} />
       </div>
     </StyledContainer>

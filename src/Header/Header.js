@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { StyledHeader } from "./Header.style";
 import Icon from "@mdi/react";
 import { mdiWeatherSunny } from "@mdi/js";
@@ -8,13 +8,14 @@ function Header({ onThemeChange }) {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   const handleThemeChange = () => {
-    if (isDarkMode) setIsDarkMode(false);
-    else setIsDarkMode(true);
+    if (isDarkMode) {
+      onThemeChange(false);
+      setIsDarkMode(false);
+    } else {
+      onThemeChange(true);
+      setIsDarkMode(true);
+    }
   };
-
-  useEffect(() => {
-    onThemeChange(isDarkMode);
-  }, [isDarkMode, onThemeChange]);
 
   return (
     <StyledHeader appTheme={isDarkMode}>
